@@ -43,9 +43,11 @@ import { green } from "./helpers/colorize-log";
  */
 const deployScript = async (): Promise<void> => {
   await deployContract({
-    contract: "YourContract",
+    contract: "ERC721Enumerable",
     constructorArgs: {
-      owner: deployer.address,
+      name: "Stark Hero",
+      symbol: "SH",
+      base_uri: "ipfs://QmVXJ2eEx3xrD2mSdPqLBEEYM5obj6DRYkn5yant6rXPmw/"
     },
   });
 };
