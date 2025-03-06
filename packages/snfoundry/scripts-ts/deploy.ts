@@ -46,7 +46,7 @@ const deployScript = async (): Promise<void> => {
     contract: "ERC721Enumerable",
     constructorArgs: {
       name: "Stark Hero",
-      symbol: "SH",
+      symbol: "StarkHero",
       base_uri: "ipfs://QmVXJ2eEx3xrD2mSdPqLBEEYM5obj6DRYkn5yant6rXPmw/"
     },
   });
